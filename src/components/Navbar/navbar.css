@@ -1,0 +1,52 @@
+.navbar-custom {
+    background: linear-gradient(to right, #b2f2b8, #22d449); /* Degradado de verde claro a verde oscuro */
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 70px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 70px;
+    border-radius: 50%; /* Borde redondo */
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    font-style: italic; /* Letra cursiva */
+    color: #000000;
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* Color del texto */
+    font-weight: bold;
+    margin-right: 20px; /* Espaciado entre los elementos del menú */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición para color y fondo */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd; /* Color del texto al pasar el ratón */
+}
+
+.navbar-nav .nav-contact {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Letra blanca */
+    border-radius: 10px; /* Borde redondo */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición para color y fondo */
+}
+
+.navbar-nav .nav-contact:hover {
+    background-color: #333333; /* Fondo al pasar el ratón */
+    color: #fff; /* Letra al pasar el ratón */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Empuja los elementos del menú a la derecha */
+}
+
+.navbar {
+    padding: 1rem 2rem;
+}
+

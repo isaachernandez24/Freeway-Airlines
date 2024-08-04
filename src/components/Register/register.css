@@ -1,0 +1,81 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.register-card {
+    width: 60%; /* Aumenta el ancho de la tarjeta */
+    max-width: 800px; /* Aumenta el ancho máximo de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #bfffcc;
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-logo {
+    height: 70px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 70px;
+    border-radius: 50%; /* Borde redondo */
+}
+
+.register-title {
+    font-size: 1.5rem;
+    font-style: italic; /* Letra cursiva */
+    color: #000000;
+    margin-top: 10px;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+
+.form-control {
+    border-left: 0;
+    height: 45px; /* Aumenta la altura de los inputs */
+    padding: 10px; /* Aumenta el padding de los inputs */
+    flex: 1;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+    border-color: #046321;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Aumenta el espacio entre los form groups */
+    text-align: left; /* Alinea el texto del label a la izquierda */
+}
+
+.form-group label {
+    display: block; /* Asegura que el label ocupe toda la anchura disponible */
+    margin-bottom: 5px; /* Espacio debajo del label */
+    font-weight: bold;
+}
+
+.input-group-prepend .input-group-text {
+    width: 45px; /* Ajusta el ancho de los íconos para que se adapten a los inputs */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #22d449;
+    border-color: #22d449;
+    height: 40px; /* Aumenta la altura del botón */
+    font-size: 1.1rem; /* Aumenta el tamaño del texto del botón */
+}
+
+.btn-primary:hover {
+    background-color: #1cb23a;
+    border-color: #1cb23a;
+}
