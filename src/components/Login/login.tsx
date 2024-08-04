@@ -4,6 +4,7 @@ import './login.css';
 import logo from '../../assets/logo-avion.png'; // Asegúrate de que la ruta del logo sea correcta
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faKey } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom'; // Usa useNavigate en lugar de useHistory
 
 // Interfaz para el estado del formulario
 interface LoginData {
@@ -24,6 +25,9 @@ const Login: React.FC = () => {
     });
 
     const [errors, setErrors] = useState<LoginErrors>({});
+    const [successMessage, setSuccessMessage] = useState<string | null>(null); // Estado para mensaje de éxito
+    const navigate = useNavigate(); // Hook para redirección
+
 
     const validateField = (name: string, value: string) => {
         let error = '';
@@ -62,8 +66,11 @@ const Login: React.FC = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (validate()) {
-            // Enviar el formulario
-            console.log('Formulario válido', loginData);
+            setSuccessMessage('Inicio de Sesión exitoso. Redirigiendo a Itinerarios...');
+            
+            setTimeout(() => {
+                navigate('#'); 
+            }, 2000);
         } else {
             console.log('Formulario inválido');
         }
@@ -77,6 +84,11 @@ const Login: React.FC = () => {
                         <img src={logo} alt="Logo" className="register-logo" />
                         <h2 className="register-title">Iniciar Sesión</h2>
                     </div>
+                    {successMessage && (
+                        <div className="alert alert-success" role="alert">
+                            {successMessage}
+                        </div>
+                    )}
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="username">Usuario</label>

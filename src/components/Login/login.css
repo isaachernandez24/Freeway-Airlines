@@ -103,3 +103,9 @@
 .card-body .form-group {
     width: 100%; /* Asegura que los form-group ocupen todo el ancho disponible en el formulario */
 }
+
+.alert-success {
+    margin-bottom: 1rem;
+}
+
+

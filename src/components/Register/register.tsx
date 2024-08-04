@@ -4,6 +4,7 @@ import './register.css'; // Importa el archivo CSS para estilos personalizados
 import logo from '../../assets/logo-avion.png'; // Asegúrate de que la ruta del logo sea correcta
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPhone, faKey, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom'; // Usa useNavigate en lugar de useHistory
 
 // Interfaz para el estado del formulario
 interface FormData {
@@ -39,6 +40,8 @@ const Register: React.FC = () => {
     });
 
     const [errors, setErrors] = useState<FormErrors>({});
+    const [successMessage, setSuccessMessage] = useState<string | null>(null); // Estado para mensaje de éxito
+    const navigate = useNavigate(); // Hook para redirección
 
     const validateField = (name: string, value: string) => {
         let error = '';
@@ -104,8 +107,13 @@ const Register: React.FC = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (validate()) {
-            // Enviar el formulario
-            console.log('Formulario válido', formData);
+            // Aquí simula un registro exitoso
+            setSuccessMessage('Registro exitoso. Redirigiendo a Iniciar Sesión...');
+            
+            // Redirigir a la página de inicio de sesión después de un pequeño retraso
+            setTimeout(() => {
+                navigate('/login'); 
+            }, 2000);
         } else {
             console.log('Formulario inválido');
         }
@@ -119,6 +127,11 @@ const Register: React.FC = () => {
                         <img src={logo} alt="Logo" className="register-logo" />
                         <h2 className="register-title">Registrarse</h2>
                     </div>
+                    {successMessage && (
+                        <div className="alert alert-success" role="alert">
+                            {successMessage}
+                        </div>
+                    )}
                     <form onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="col-md-6">
@@ -254,3 +267,4 @@ const Register: React.FC = () => {
 };
 
 export default Register;
+
