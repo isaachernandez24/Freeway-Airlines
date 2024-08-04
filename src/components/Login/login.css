@@ -1,0 +1,105 @@
+/* login.css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-card-login {
+    width: 30%; /* Ancho de la tarjeta */
+    max-width: 800px; /* Ancho máximo de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #bfffcc;
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-logo {
+    height: 70px; /* Tamaño del logo */
+    width: 70px;
+    border-radius: 50%; /* Borde redondo */
+}
+
+.register-title {
+    font-size: 1.5rem;
+    font-style: italic; /* Letra cursiva */
+    color: #000000;
+    margin-top: 10px;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+
+.form-control {
+    border-left: 0;
+    height: 45px; /* Altura de los inputs */
+    padding: 10px; /* Padding de los inputs */
+    flex: 1;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+    border-color: #046321;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre los form groups */
+    text-align: left; /* Alineación del texto del label */
+}
+
+.form-group label {
+    display: block; /* El label ocupa toda la anchura disponible */
+    margin-bottom: 5px; /* Espacio debajo del label */
+    font-weight: bold;
+}
+
+.input-group-prepend .input-group-text {
+    width: 45px; /* Ancho de los íconos */
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #22d449;
+    border-color: #22d449;
+    height: 40px; /* Altura del botón */
+    font-size: 1.1rem; /* Tamaño del texto del botón */
+    display: block; /* Asegura que el botón se comporta como un bloque */
+    margin: 0 auto; /* Centra el botón horizontalmente */
+}
+
+.btn-primary:hover {
+    background-color: #1cb23a;
+    border-color: #1cb23a;
+}
+
+.invalid-feedback {
+    display: block;
+    font-size: 0.875rem;
+    color: #dc3545; /* Color del mensaje de error */
+}
+
+/* Asegúrate de centrar el formulario y su contenido dentro de la tarjeta */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+}
+
+.card-body form {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible en la tarjeta */
+}
+
+.card-body .form-group {
+    width: 100%; /* Asegura que los form-group ocupen todo el ancho disponible en el formulario */
+}
