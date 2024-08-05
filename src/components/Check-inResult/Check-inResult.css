@@ -1,0 +1,73 @@
+.qr-result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.qr-result-card {
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.qr-result-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.qr-result-title {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #4caf50;
+}
+
+.back-icon {
+    cursor: pointer;
+    color: #4caf50;
+    margin-right: 10px;
+}
+
+.qr-result-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.qr-result-details {
+    margin-bottom: 20px;
+}
+
+.qr-result-subtitle {
+    font-size: 1.25rem;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.qr-result-actions button {
+    margin: 5px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.qr-result-actions button:hover {
+    background-color: #388e3c;
+}
