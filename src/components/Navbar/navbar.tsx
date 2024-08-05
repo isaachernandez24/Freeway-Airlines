@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
                         <a className="nav-link" href="#home">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#reservations">Reservaciones</a>
+                        <a className="nav-link" href="#">Reservaciones</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#about">Itinerarios</a>
