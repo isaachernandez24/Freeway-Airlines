@@ -1,0 +1,79 @@
+.itinerario-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Añadido para posicionar la tarjeta de sesión */
+}
+
+.search-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.datatable {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.session-card {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #007bff;
+}
+
+.flight-number-cell {
+    display: flex;
+    align-items: center;
+}
+
+.flight-icon-link {
+    margin-left: 8px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.flight-icon {
+    font-size: 1.2em;
+}
+
+.flight-icon-link:hover .flight-icon {
+    color: #0056b3;
+}
