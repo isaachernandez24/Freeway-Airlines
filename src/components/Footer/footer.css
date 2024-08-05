@@ -1,7 +1,7 @@
 /* src/components/Footer/footer.css */
 .footer {
     width: 100%;
-    background-color: #22d449; /* Color de fondo oscuro */
+    background: linear-gradient(to right, #b2f2b8, #22d449);
     color: #000000; /* Color del texto */
     padding: 1rem 0;
     text-align: center;

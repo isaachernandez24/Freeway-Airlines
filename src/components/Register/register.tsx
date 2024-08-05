@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './register.css'; // Importa el archivo CSS para estilos personalizados
-import logo from '../../assets/logo-avion.png'; // Asegúrate de que la ruta del logo sea correcta
+import logo from '../../assets/logo-avion.png'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPhone, faKey, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom'; // Usa useNavigate en lugar de useHistory

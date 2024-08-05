@@ -31,8 +31,8 @@ const Navbar: React.FC = () => {
                     <li className={`nav-item ${currentPath === '/reservaciones' ? 'active' : ''}`}>
                         <Link className="nav-link" to="/reservaciones">Reservaciones</Link>
                     </li>
-                    <li className={`nav-item ${currentPath === '/itinerarios' ? 'active' : ''}`}>
-                        <Link className="nav-link" to="/itinerarios">Itinerarios</Link>
+                    <li className={`nav-item ${currentPath === '/itinerario' ? 'active' : ''}`}>
+                        <Link className="nav-link" to="/itinerario">Itinerarios</Link>
                     </li>
                     <li className={`nav-item ${currentPath === '/login' ? 'active' : ''}`}>
                         <Link className="nav-link" to="/login">Iniciar Sesión</Link>

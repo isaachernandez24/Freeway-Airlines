@@ -1,5 +1,5 @@
 import React from 'react';
-import './home.css'; // Asegúrate de que la ruta del archivo CSS sea correcta
+import './home.css'; 
 
 const Home: React.FC = () => {
     return (
